@@ -79,7 +79,7 @@ header {
   margin-bottom: 110px;
 }
 
-section article {
+section article{
   color: #4d4e53;
   margin: 15px;
   font-size: 1.25em;
@@ -97,7 +97,6 @@ section li {
   }
 
   #navbar {
-    background-color: white;
     position: absolute;
     top: 0;
     padding: 0;
@@ -113,6 +112,7 @@ section li {
     position: relative;
     margin-left: 0px;
     margin-top: 270px;
+	font-size: 2.5em;
   }
 }
 
