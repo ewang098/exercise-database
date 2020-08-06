@@ -53,7 +53,12 @@ header {
 #navbar li.link {
 	border-top: .1px solid;
 	border-bottom: .1px solid;
-	background-color: #F0FFFF;
+  background-color: #F0FFFF;
+}
+
+#navbar li.link:hover {
+  background-color: #F0FFFF;
+  color: grey;
 }
 
 #navbar li.git{
@@ -71,7 +76,13 @@ header {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+}
+
+#navbar a:hover{
+  background-color:lightblue;
 }
 
 #navbar a.link {
@@ -80,6 +91,10 @@ header {
 
 #navbar a.white{
 	color: #F8F8FF;
+}
+
+#navbar a.white:hover{
+  background-color: #333;
 }
 
 #main-doc {
@@ -104,7 +119,7 @@ header {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
-  margin-auto;
+  margin: auto;
 }
 .iframe-container iframe{
   position: absolute;
