@@ -1,14 +1,31 @@
-html,
 body {
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  background: repeating-linear-gradient(
+    45deg,
+    #388087,
+    #388087 25em,
+    #6FB3B8 25em,
+    #6FB3B8 50em
+  );
   line-height: 1.5;
+  font-family: Arial;
+}
+
+p,ul{
+  color: #388087;
+  text-shadow: .5px 0px 0px #327379;
+}
+
+article{
+  color: #388087;
+  background-color: #F6F6F2;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 div {
-	margin: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 #navbar {
@@ -19,20 +36,24 @@ div {
   width: 250px;
   height: 100%;
   border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  border-color: #6FB3B8;
+  background-color: #F6F6F2;
 }
 
-header {
-  color: black;
+#navbar header {
+  color: #388087;
+  text-shadow: 1px 1px 0px #327379;
   margin: 10px;
   text-align: center;
   font-size: 2.6em;
-  font-weight: thin;
 }
 
 #main-doc header {
-  text-align: left;
-  margin: 0px;
+  color: #F6F6F2;
+  text-shadow: 2px 2px 0px #ddddd9;
+  margin: 10px;
+  text-align: center;
+  font-size: 4.2em;
 }
 
 #navbar ul {
@@ -42,9 +63,8 @@ header {
   overflow-x: hidden;
 }
 
-#navbar li {
-  color: #4d4e53;
-  border-top: .1px solid;
+#navbar li{
+  border-top: .1px solid #6FB3B8;
   list-style: none;
   position: relative;
   width: 100%;
@@ -53,12 +73,7 @@ header {
 #navbar li.link {
 	border-top: .1px solid;
 	border-bottom: .1px solid;
-  background-color: #F0FFFF;
-}
-
-#navbar li.link:hover {
-  background-color: #F0FFFF;
-  color: grey;
+  background-color: #C2EDCE;
 }
 
 #navbar li.git{
@@ -70,23 +85,27 @@ header {
 #navbar a {
   display: block;
   /*padding: 15px 30px 10px;*/
-  font-size: 1.6em;
-  color: #4d4e53;
+  font-size: 1.5em;
+  color: #388087;
+  text-shadow: 1px 1px 0px #327379;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  transition-duration: 0.4s;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 50px;
+  transition-duration: 0.5s;
 }
 
 #navbar a:hover{
-  background-color:lightblue;
+  background-color:#ddddd9;
+  border-radius:7.5px;
+  font-size: 1.8em;
 }
 
 #navbar a.link {
-  color: #0000FF;
+  color: #388087;
 }
 
 #navbar a.white{
@@ -105,7 +124,6 @@ header {
 }
 
 #main-doc section article{
-  color: #4d4e53;
   margin: 15px;
   font-size: 1.25em;
 }
