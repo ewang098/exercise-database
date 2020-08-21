@@ -1,15 +1,23 @@
 body {
   min-width: 290px;
   color: #4d4e53;
-  background: repeating-linear-gradient(
-    45deg,
-    #388087,
-    #388087 25em,
-    #6FB3B8 25em,
-    #6FB3B8 50em
-  );
+  background: linear-gradient(-45deg, #388087,#385987,#388767);
+        background-size: 1500% 1500%;
+        animation: change 10s ease-in-out infinite;
   line-height: 1.5;
   font-family: Arial;
+}
+
+@keyframes change{
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
 }
 
 p,ul{
